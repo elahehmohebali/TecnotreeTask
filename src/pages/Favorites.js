@@ -2,7 +2,8 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function Favorites() {
+function Favorites()
+{
     const [favorites , setFavorites ] = useState([]);
     useEffect(() => {
 		setFavorites(JSON.parse(localStorage.getItem('favorites') || '[]'));
